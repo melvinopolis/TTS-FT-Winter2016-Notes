@@ -30,8 +30,8 @@
 * JavaScript's official name is EcmaScript!
 * ECMA maintains and updates Standards (TC39 committee)
 * Open platform -> fragmentation (features and performance)
-		* Features - Often implementation happens before specification
-		* Performance - different performance characteristics
+	-Features - Often implementation happens before specification
+	-Performance - different performance characteristics
 * Most JS is ES5, but ES6 was ratified summer of 2015
 
 
@@ -46,7 +46,7 @@ var z = true;
 ```
 
 ### Loose typing
-variables are declared with var, but have a type that can be changed
+Variables are declared with var, but have a type that can be changed
 
 ```javascript
 var z = 1;
@@ -57,7 +57,7 @@ typeof z //number
 ```
 
 ### Coersion
-variable type is coerced to a type that makes sense when reached
+Variable type is coerced to a type that makes sense to the computer when reached
 
 **IMPLICIT** coercion
 
@@ -71,8 +71,8 @@ variable type is coerced to a type that makes sense when reached
 // The entire expression is implicitly converted into a string and concatenated 
 "7" + 7 + 7; // = "777"
 ```
-Above, when we add Integers (numbers) together, we get a sum of 21. 
-However, in our second example, the first two 7s are added together (14) and then converted into a string and concatenated with the string value of 7.
+Above, when we add Integers (numbers) together, we get a sum of 21. <br>
+However, in our second example, the first two 7s are added together (14) and then converted into a string and concatenated with the string value of 7. <br>
 In the final example, the entire expression is almost immediately converted into a string.
 
 **EXPLICIT** coercion:
@@ -128,11 +128,11 @@ if(x) {
 **CHALLENGE 1** Do you need more coffee?<br>
 
 Write a script that:
-- stores the number of cups (that a person has consumed) in a variable
+- stores the number of cups that a person has consumed in a variable
 - if the person has had *less than* 3 cups 
-	- log a message to the console saying: ("Yes I'll take another cup of coffee")
+	- log a message to the console saying: "Yes I'll take another cup of coffee"
 - if not
-	- log a message to console saying ("I think I'm okay for now")   
+	- log a message to console saying: "I think I'm okay for now"
 
 
 **CHALLENGE 1 ANSWER:**
@@ -244,14 +244,13 @@ for (var i = 0; i <= 9; i++) {
 ```
 
 Let's work through each part of the loop. 
-Within the parentheses, there are 3 key things happening: 
-1. We are **setting** a variable's value (in this case, to 0)
-2. We are **comparing** the variable's value to the desired break-point
+Within the parentheses, there are 3 key things happening: <br>
+1. We are **setting** a variable's value (in this case, to 0) <br>
+2. We are **comparing** the variable's value to the desired break-point<br>
 3. we are **incrementing** the *value* of the variable on each *iteration*
 
 
 **CHALLENGE 3** - 99 Bottles<br>
-(5 minutes)
 
 - Using a `for` loop.
 - Write a simple version of "99 bottles of beer on the wall"
@@ -441,7 +440,7 @@ course.fun = true; //add a property
 delete course.name; //remove one
 ```
 
-**CHALLENGE 4: Addressing Objects**
+**CHALLENGE 4: Addressing Objects**<br>
 Given the following object:
 
 ```javascript
